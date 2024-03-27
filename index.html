@@ -24,6 +24,8 @@
         color: white;
       }
     </style>
+    <!-- 정상적 로딩위해서  스크립트 로딩 끝나고 dom 인식해라-->
+    <script type="text/javascript" src="js/test.js" defer></script>
   </head>
   <body style="background-color: black">
     <nav class="navbar" style="background-color: #e3f2fd">
@@ -125,6 +127,27 @@
             </button>
           </form>
         </div>
+        <!-- serch삽입  -->
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <!-- id=search_btn 추가로 마우스 이벤트 호출  -->
+              <button
+                class="btn btn-outline-success"
+                id="search_btn"
+                type="submit"
+              >
+                검색
+              </button>
+            </form>
+          </div>
+        </nav>
       </div>
     </nav>
 
