@@ -26,8 +26,12 @@
     <script type="text/javascript" src="js/test.js" defer></script>
     <script type="text/javascript" src="js/search.js" defer></script>
     <script type="text/javascript" src="js/data_type.js" defer></script>
+    <!-- 팝업창 2 -->
+    <script type="text/javascript" src="js/pop_up.js" defer></script>
   </head>
   <body style="background-color: black">
+    <!--팝업창 1 -->
+    <body style="background-color: black" onload="pop_up();"></body>
     <!-- 내비게이션 바  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -83,11 +87,14 @@
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <!-- 구글 검색으로 수정  -->
+          <form class="d-flex" role="search" onsubmit="return googleSearch();">
             <input
               class="form-control me-2"
+              id="search_input"
+              name="q"
               type="search"
-              placeholder="Search"
+              placeholder="키워드 입력"
               aria-label="Search"
             />
             <!-- 마우스 이벤트 -->
