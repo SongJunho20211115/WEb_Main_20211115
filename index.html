@@ -24,8 +24,11 @@
         color: white;
       }
     </style>
+
     <!-- 정상적 로딩위해서  스크립트 로딩 끝나고 dom 인식해라-->
     <script type="text/javascript" src="js/test.js" defer></script>
+    <script type="text/javascript" src="js/search.js" defer></script>
+    <script type="text/javascript" src="js/data_type.js" defer></script>
   </head>
   <body style="background-color: black">
     <nav class="navbar" style="background-color: #e3f2fd">
@@ -115,15 +118,21 @@
             </ul>
           </li>
 
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search" onsubmit="return googleSearch()">
             <input
               class="form-control me-2"
+              id="search_input"
+              name="q"
               type="search"
-              placeholder="Search"
+              placeholder="키워드 입력"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <button
+              class="btn btn-outline-success"
+              id="search_btn"
+              type="submit"
+            >
+              검색하기
             </button>
           </form>
         </div>

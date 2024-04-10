@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="학번" />
+    <meta name="keywordsr" content="computer" />
+    <base href="http://127.0.0.1:5500" />
+    <title>lol 메인화면</title>
+
+    <title>Document</title>
+    <!-- 내비게이션 바 위한 자바 스크립트 링크 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 내비게이션 바 위한 자바스크립트 링크 여까지 -->
+    <!-- js 연동 -->
+    <script type="text/javascript" src="js/test.js" defer></script>
+    <script type="text/javascript" src="js/search.js" defer></script>
+    <script type="text/javascript" src="js/data_type.js" defer></script>
+  </head>
+  <body style="background-color: black">
+    <!-- 내비게이션 바  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- 내비 바에 이미지 추가  -->
+        <nav class="navbar bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="LOGO.png" alt="Bootstrap" width="30" height="24" />
+            </a>
+          </div>
+        </nav>
+        <!-- 내비 바에 이미지 추가  -->
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <!-- 마우스 이벤트 -->
+            <button
+              class="btn btn-outline-success"
+              id="search_btn"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- 내비게이션 바  -->
+    <div style="display: flex; justify-content: center">
+      <img src="LOGO.png" width="200" height="60" />
+      <h3
+        style="
+          font-size: 24px;
+          font-weight: bold;
+          font-style: italic;
+          color: white;
+          font-family: '굴림';
+        "
+      >
+        <a
+          href="https://www.leagueoflegends.com/ko-kr/how-to-play/"
+          target="_blank"
+          >기본정보</a
+        >
+        챔피언 패치노트 세션
+      </h3>
+    </div>
+    <hr />
+    <center>
+      <!-- class="img-fluid 4주차 강의(부트스트랩에서)" -->
+      <a href="index.html" target="_blank">
+        <img
+          src="image/LOGO1.png"
+          class="img-fluid"
+          width="1200"
+          height="700"
+        />
+      </a>
+    </center>
+    <div style="display: flex; justify-content: center">
+      <table class="table-primary" bgcolor="grey">
+        <caption>
+          인기캐릭터
+        </caption>
+        <tbody>
+          <tr class="table-primary" bgcolor="red">
+            <td width="80" rowspan="1">사이온</td>
+            <td>아리</td>
+            <td>가렌</td>
+            <td>가렌2</td>
+            <td>가렌3</td>
+          </tr>
+          <tr class="table-secondary" bgcolor="grey">
+            <td colspan="5">
+              <a href="https://www.leagueoflegends.com/ko-kr/" target="_blank"
+                >롤 웹사이트 접속하기</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="table-primary" bgcolor="blue"><b>카직스</b></td>
+            <td class="table-info">루시안</td>
+            <td class="table-danger">루시안2</td>
+            <td colspan="2">
+              <img src="VI.png" /><font size="13">바이,바이2</font>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <h3
+        style="
+          font-size: 24xp;
+          font-weight: bold;
+          font-style: italic;
+          color: white;
+          font-family: '굴림';
+        "
+      >
+        라이엇 게임회사 정보
+      </h3>
+    </div>
+  </body>
+</html>

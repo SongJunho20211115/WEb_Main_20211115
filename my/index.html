@@ -20,14 +20,16 @@
       * {
         text-align: start;
       }
-      .main {
+      .card {
+        border: 2px solid gray;
+      }
+      .nav {
         border: 2px solid green;
-        height: 300px;
-        line-height: 300px;
+        height: 110px;
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: rgb(246, 249, 235)">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">KIND</a>
@@ -91,10 +93,40 @@
     </nav>
 
     <hr />
-    <img src="BACK.png" class="img-fluid" width="1500" height="270" />
+    <div style="display: flex; justify-content: center">
+      <img
+        src="REALREAL.PNG"
+        class="img-fluid"
+        style="width: 1450px; height: 350px"
+      />
+    </div>
+    <br />
 
-    <div class="main">다나옷</div>
-      
+    <div class="card" style="width: 8rem">
+      <img src="SLOGO.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <p class="card-text" style="font-style: italic">a</p>
+      </div>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li>Menu1</li>
+        <li>Menu2</li>
+        <li>Menu3</li>
+        <li>Menu4</li>
+      </ul>
+    </div>
+
+    <div style="display: flex; justify-content: center">
+      <table class="table" border="1">
+        <caption></caption>
+        <tbody>
+          <tr>
+            1
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
