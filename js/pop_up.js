@@ -1,4 +1,7 @@
 function pop_up() {
+  var cookieCeck = getCookie("popupYN");
+      if(cookieCheck !="N"){
+        
   window.open(
     '../POPUP/popup.html',
     '팝업 테스트',
