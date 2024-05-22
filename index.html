@@ -26,11 +26,18 @@
     </style>
 
     <!-- 정상적 로딩위해서  스크립트 로딩 끝나고 dom 인식해라-->
+    <!-- 내비게이션 바 위한 자바스크립트 링크 여까지 -->
+    <!-- js 연동 -->
     <script type="text/javascript" src="js/test.js" defer></script>
     <script type="text/javascript" src="js/search.js" defer></script>
     <script type="text/javascript" src="js/data_type.js" defer></script>
+    <!-- 팝업창 2 -->
+    <script type="text/javascript" src="js/pop_up.js" defer></script>
   </head>
   <body style="background-color: black">
+    <!--팝업창 1 -->
+    <body style="background-color: black" onload="pop_up();"></body>
+
     <nav class="navbar" style="background-color: #e3f2fd">
       <div class="container-fluid">
         <!-- 이미지 삽입/부트스트랩 에서 복붙 -->
@@ -94,20 +101,6 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              영웅정보
-            </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">암살자</a></li>
               <li><a class="dropdown-item" href="#">전사</a></li>
@@ -118,35 +111,7 @@
             </ul>
           </li>
 
-          <form class="d-flex" role="search" onsubmit="return googleSearch()">
-            <input
-              class="form-control me-2"
-              id="search_input"
-              name="q"
-              type="search"
-              placeholder="키워드 입력"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success"
-              id="search_btn"
-              type="submit"
-            >
-              검색하기
-            </button>
-          </form>
-        </div>
-        <!-- serch삽입  -->
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <!-- id=search_btn 추가로 마우스 이벤트 호출  -->
+                        <!-- id=search_btn 추가로 마우스 이벤트 호출  -->
               <button
                 class="btn btn-outline-success"
                 id="search_btn"
