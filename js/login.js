@@ -1,3 +1,19 @@
+const check_xss=input=>{
+  // DOMPurify 라이브러리 로드 (CDN 사용)
+  const DOMPurif = window.DOMPurify;
+
+  //입력 값을 DOMPURIFY로 sanitize
+  const sanitizedInput=DOMPurify.sanitize(input);
+  
+  //Sanitized된 값과 원본 입력 값 비교
+  if (sanitizedInput !== input){
+    //xss 공격 가능성 발견 시 에러 처리
+    alert('xss 공격 가능성이 있는 입력값을 발견했습니다.');
+    return false;
+  }
+  return sanitizedInput;
+};
+
 const check_input = () => {
   const loginForm = document.getElementById('login_form');
   const loginBtn = document.getElementById('login_btn');
@@ -45,3 +61,4 @@ const check_input = () => {
 };
 
 document.getElementById('login_btn').addEventListener('click', check_input);
+
